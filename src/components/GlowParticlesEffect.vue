@@ -1,6 +1,6 @@
 <template>
-    <div class="glow z-[998]"></div>
-    <div class="particles z-[1001]">
+    <div class="glow z-[999]"></div>
+    <div class="particles z-[999]">
       <div
         v-for="n in 5"
         :key="n"
@@ -52,7 +52,7 @@
   
   .particles {
     position: absolute;
-    top: -20%;
+    top: -10%;
     left: -15%;
     width: 100%;
     height: 100%;

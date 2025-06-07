@@ -1,10 +1,10 @@
 <template>
-    <div ref="container" class="overflow-hidden inline-block w-full DMsans gradient-text">
+    <div ref="container" class="overflow-hidden inline-block w-full DMsans gradient-text ">
       <span
         v-for="(word, index) in words"
         :key="index"
         class="overflow-visible inline-block  translate-y-full text-[clamp(2rem,6vw,5rem)]
-         text-white opacity-90 leading-none tracking-[-.025em] glow-gradient-text"
+         text-white opacity-90 leading-tight tracking-[-.025em] glow-gradient-text"
       >
         {{ word }}&nbsp;
       </span>
