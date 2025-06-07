@@ -1,24 +1,25 @@
 <template>
     <section
-      class="z-[1000] DMsans absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-5 py-16  text-gray-900 flex flex-col items-start gap-2 sm:items-center sm:text-center"
+      class="z-[1000] DMsans absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-5 py-16  text-gray-900 flex flex-col items-start gap-2 lg:items-center lg:text-center"
       aria-label="Hero section promoting the prop trading firm features"
     >
       <!-- Slogan -->
-      <p class="text-lg font-medium flex items-center gap-2 text-white" aria-label="Our capital, your success">
-        Front-End Developer, UI/UX 
+       <p class="text-lg font-medium flex items-start gap-2 text-white lg:flex-row flex-col" aria-label="Our capital, your success">
+        Front-End Developer,
         <!-- Chart Icon -->
+        <span class="flex items-center gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 17l6-6 4 4 8-8" />
         </svg>
-        Enthusiast
-      </p>
-
+        UI/UX  Enthusiast
+      </span>
+        </p>
         <div class="max-w-[800px] overflow-hidden z-[1000] relative">
         <AnimatedWords text="Digital Experiences" />
         <AnimatedWords text="With Passion" :delay="1"/>
         </div>
       <!-- Feature list -->
-      <ul class="m-6 text-left sm:text-center flex justify-center gap-4  md:flex-row flex-col " role="list" aria-label="Key benefits">
+      <ul class="m-6 text-left lg:text-center flex justify-center gap-4   flex-col  lg:flex-row mb-8" role="list" aria-label="Key benefits">
         <li class="flex items-center gap-2">
           <!-- Lightning Icon -->
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -48,7 +49,7 @@
           <p class="text-md text-white ">SEO & Web Vitals 100%</p>
         </li>
       </ul>
-      <div class="flex items-center justify-center gap-4">
+      <div class="flex items-center justify-center gap-4 lg:justify-start">
                 <div class="flex items-center gap-2">
                 <button 
                     class="relative z-[1000] cursor-pointer flex items-center justify-center gap-1 px-2 py-2 border border-white bg-white text-black rounded-xl font-semibold hover:scale-105 transition ease-in-out duration-300"
@@ -64,7 +65,7 @@
                 </button>
 
                 <button
-                    class="cursor-pointer bg-white/3 backdrop-blur-xs px-4 py-2 rounded text-white text-md font-semibold border border-white rounded-xl hover:scale-105 transition ease-in-out duration-300"
+                    class="cursor-pointer bg-white/3 backdrop-blur-xs px-4 py-2 rounded text-white text-md font-semibold border border-white rounded-xl hover:scale-105 transition ease-in-out duration-300 lg:mt-0"
                     aria-label="Start free trial"
                 >
                     Contact Me

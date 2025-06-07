@@ -86,10 +86,10 @@
       aria-label="Mobile Primary Links"
     >
       <li><a href="#home" role="menuitem" @click="closeMenu" class="cursor-pointer">Home</a></li>
-      <li><a href="#how" role="menuitem" @click="closeMenu" class="cursor-pointer">How it Works</a></li>
-      <li><a href="#programs" role="menuitem" @click="closeMenu" class="cursor-pointer">Programs</a></li>
-      <li><a href="#support" role="menuitem" @click="closeMenu" class="cursor-pointer">Support</a></li>
-      <li><a href="#partners" role="menuitem" @click="closeMenu" class="cursor-pointer">Become a Partner</a></li>
+      <li><a href="#how" role="menuitem" @click="closeMenu" class="cursor-pointer">About Me</a></li>
+      <li><a href="#programs" role="menuitem" @click="closeMenu" class="cursor-pointer">Projects</a></li>
+      <li><a href="#support" role="menuitem" @click="closeMenu" class="cursor-pointer">Resume</a></li>
+      <li><a href="#partners" role="menuitem" @click="closeMenu" class="cursor-pointer">Contact Me</a></li>
       <li class="border border-white rounded-xl px-4 py-2 cursor-pointer w-[165px]">
         <a href="#login" role="menuitem" @click="closeMenu" class="cursor-pointer">Login / Register</a>
       </li>
@@ -99,7 +99,7 @@
           aria-label="Start a challenge"
           @click="closeMenu"
         >
-          Start a challenge
+          View Projects
           <span class="bg-[#5AE986] rounded-lg p-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +118,7 @@
           aria-label="Start free trial"
           @click="closeMenu"
         >
-          Free Trial
+          Contact Me
         </button>
       </li>
     </ul>
