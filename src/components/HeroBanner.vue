@@ -1,6 +1,6 @@
 <template>
     <section
-      class="DMsans absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-5 py-16 bg-white/0 backdrop-blur-md text-gray-900 flex flex-col items-start gap-2 sm:items-center sm:text-center"
+      class="z-[1001] DMsans absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-5 py-16 bg-white/0 backdrop-blur-md text-gray-900 flex flex-col items-start gap-2 sm:items-center sm:text-center"
       aria-label="Hero section promoting the prop trading firm features"
     >
       <!-- Slogan -->
@@ -13,8 +13,9 @@
         Success
       </p>
 
-        <div class="max-w-[800px]">
-        <AnimatedWords text="No Time Limit Prop Firm Conquer the Market" />
+        <div class="max-w-[800px] overflow-hidden">
+        <AnimatedWords text="No Time Limit Prop Firm" />
+        <AnimatedWords text="Conquer the Market" :delay="1"/>
         </div>
       <!-- Feature list -->
       <ul class="m-6 text-left sm:text-center flex justify-center gap-4  md:flex-row flex-col " role="list" aria-label="Key benefits">
@@ -48,9 +49,9 @@
         </li>
       </ul>
       <div class="flex items-center justify-center gap-4">
-                <div class="flex items-center gap-1">
-                <button
-                    class="cursor-pointer flex items-center justify-center gap-1 px-2 py-2 border border-white bg-white text-black rounded-xl font-semibold"
+                <div class="flex items-center gap-2">
+                <button 
+                    class="relative z-[1000] cursor-pointer flex items-center justify-center gap-1 px-2 py-2 border border-white bg-white text-black rounded-xl font-semibold hover:scale-105 transition ease-in-out duration-300"
                     aria-label="Start a challenge"
                 >
                     Start a challenge
@@ -63,7 +64,7 @@
                 </button>
 
                 <button
-                    class="cursor-pointer px-4 py-2 rounded text-white text-md font-semibold border border-white rounded-xl"
+                    class="cursor-pointer px-4 py-2 rounded text-white text-md font-semibold border border-white rounded-xl hover:scale-105 transition ease-in-out duration-300"
                     aria-label="Start free trial"
                 >
                     Free Trial

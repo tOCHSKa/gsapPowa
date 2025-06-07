@@ -82,17 +82,17 @@
     <ul
       v-if="isOpen"
       id="mobile-menu"
-      class="h-full DMsans xl:hidden mt-[72px] bg-[#141915]/50 backdrop-blur-lg rounded-b-xl p-5 text-white text-lg font-medium flex flex-col gap-4 fixed top-0 left-0 right-0 z-30"
+      class="h-full relative z-[10001] DMsans xl:hidden mt-[72px] bg-[#141915]/50 backdrop-blur-lg rounded-b-xl p-5 text-white text-lg font-medium flex flex-col gap-4 fixed top-0 left-0 right-0 z-30"
       role="menu"
       aria-label="Mobile Primary Links"
     >
-      <li><a href="#home" role="menuitem" @click="closeMenu">Home</a></li>
-      <li><a href="#how" role="menuitem" @click="closeMenu">How it Works</a></li>
-      <li><a href="#programs" role="menuitem" @click="closeMenu">Programs</a></li>
-      <li><a href="#support" role="menuitem" @click="closeMenu">Support</a></li>
-      <li><a href="#partners" role="menuitem" @click="closeMenu">Become a Partner</a></li>
+      <li><a href="#home" role="menuitem" @click="closeMenu" class="cursor-pointer">Home</a></li>
+      <li><a href="#how" role="menuitem" @click="closeMenu" class="cursor-pointer">How it Works</a></li>
+      <li><a href="#programs" role="menuitem" @click="closeMenu" class="cursor-pointer">Programs</a></li>
+      <li><a href="#support" role="menuitem" @click="closeMenu" class="cursor-pointer">Support</a></li>
+      <li><a href="#partners" role="menuitem" @click="closeMenu" class="cursor-pointer">Become a Partner</a></li>
       <li class="border border-white rounded-xl px-4 py-2 cursor-pointer w-[165px]">
-        <a href="#login" role="menuitem" @click="closeMenu">Login / Register</a>
+        <a href="#login" role="menuitem" @click="closeMenu" class="cursor-pointer">Login / Register</a>
       </li>
       <li class="flex items-center flex-start gap-5 mt-2 ">
         <button

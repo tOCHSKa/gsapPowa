@@ -30,7 +30,7 @@
 	position: relative;
 	margin: 0 auto 0 auto;
 	overflow: hidden;
-    z-index: 1000;
+    z-index: 999;
 }
 
 #lightings
@@ -67,10 +67,10 @@ section {
 }
 @keyframes one {
   from {
-    box-shadow: 0 0 250px 20px #141915; /* très sombre, presque noir-vert */
+    box-shadow: 0 0 250px 20px #141915;
   }
   to {
-    box-shadow: 0 0 100px 15px #2c3a31; /* un vert plus clair mais toujours sombre */
+    box-shadow: 0 0 100px 15px #2c3a31;
   }
 }
 

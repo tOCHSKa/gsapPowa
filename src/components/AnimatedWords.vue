@@ -3,8 +3,8 @@
       <span
         v-for="(word, index) in words"
         :key="index"
-        class="overflow-visible inline-block opacity-0 translate-y-full text-[clamp(2rem,6vw,5rem)]
-         text-white/80 leading-none tracking-[-.025em] glow-gradient-text "
+        class="overflow-visible inline-block  translate-y-full text-[clamp(2rem,6vw,5rem)]
+         text-white opacity-90 leading-none tracking-[-.025em] glow-gradient-text"
       >
         {{ word }}&nbsp;
       </span>
@@ -17,6 +17,7 @@
   
   const props = defineProps({
     text: String,
+    delay: { type: Number, default: 0 },
   });
   
   const container = ref(null);
@@ -24,11 +25,11 @@
   
   onMounted(() => {
     gsap.to(container.value.children, {
-      opacity: 1,
       y: 0,
       duration: 1.6,
       ease: 'power3.out',
       stagger: 0.2,
+      delay: props.delay
     });
   });
   </script>
