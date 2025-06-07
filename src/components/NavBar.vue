@@ -12,8 +12,7 @@
                 </div>
                 <ul
                 class="ullist flex ml-3 flex items-center gap-1 text-white text-md font-medium bg-white/3 backdrop-blur-md rounded-xl px-1 py-1 hidden xl:flex"
-                role="navigation"
-                aria-label="Primary links">
+                >
                     <li class="flex items-center cursor-pointer"><a href="#home" aria-label="Home" class="bg-white/10 backdrop-blur-md  hover:bg-white/20 transition ease-in-out duration-300 rounded-lg px-3 py-2">Home</a></li>
                     <li class="flex items-center cursor-pointer"><a href="#how" aria-label="About Me" class="hover:bg-white/20 px-3 py-2 rounded-lg transition ease-in-out duration-300">About Me</a></li>
                     <li class="flex items-center cursor-pointer"><a href="#programs" aria-label="Projects" class="hover:bg-white/20 px-3 py-2 rounded-lg transition ease-in-out duration-300">Projects</a></li>

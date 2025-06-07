@@ -9,6 +9,12 @@
         </div>
         <HeroBanner />
         <GlowParticlesEffect />
+        <MyParticleComponent
+            :showGlow="false"
+            particlesTop="10%"
+            particlesLeft="0%"
+            />
+
     </div>
 </template>
 
@@ -18,6 +24,7 @@ import FooterLight from '../components/FooterLight.vue'
 import NavBar from '../components/NavBar.vue'
 import HeroBanner from '../components/HeroBanner.vue'
 import GlowParticlesEffect from '../components/GlowParticlesEffect.vue'
+import MyParticleComponent from '../components/ReusableGlow.vue'
 </script>
 
 <style scoped>
