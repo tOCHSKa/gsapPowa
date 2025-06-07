@@ -3,7 +3,7 @@
       <span
         v-for="(word, index) in words"
         :key="index"
-        class="overflow-visible inline-block  translate-y-full text-[clamp(2rem,6vw,5rem)]
+        class="cursor-default overflow-visible inline-block  translate-y-full text-[clamp(2rem,6vw,5rem)]
          text-white opacity-90 leading-tight tracking-[-.025em] glow-gradient-text"
       >
         {{ word }}&nbsp;

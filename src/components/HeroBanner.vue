@@ -1,10 +1,10 @@
 <template>
     <section
       class="z-[1000] DMsans absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-5 py-16  text-gray-900 flex flex-col items-start gap-2 lg:items-center lg:text-center"
-      aria-label="Hero section promoting the prop trading firm features"
+      aria-label="Hero Banner"
     >
       <!-- Slogan -->
-       <p class="text-lg font-medium flex items-start gap-2 text-white lg:flex-row flex-col" aria-label="Our capital, your success">
+       <p class="cursor-default text-lg font-medium flex items-start gap-2 text-white lg:flex-row flex-col" aria-label="Front-End Developer, UI/UX Enthusiast">
         Front-End Developer,
         <!-- Chart Icon -->
         <span class="flex items-center gap-2">
@@ -19,7 +19,7 @@
         <AnimatedWords text="With Passion" :delay="1"/>
         </div>
       <!-- Feature list -->
-      <ul class="m-6 text-left lg:text-center flex justify-center gap-4   flex-col  lg:flex-row mb-8" role="list" aria-label="Key benefits">
+      <ul class="cursor-default m-6 text-left lg:text-center flex justify-center gap-4   flex-col  lg:flex-row mb-8" role="list" aria-label="Key benefits">
         <li class="flex items-center gap-2">
           <!-- Lightning Icon -->
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -53,7 +53,7 @@
                 <div class="flex items-center gap-2">
                 <button 
                     class="relative z-[1000] cursor-pointer flex items-center justify-center gap-1 px-2 py-2 border border-white bg-white text-black rounded-xl font-semibold hover:scale-105 transition ease-in-out duration-300"
-                    aria-label="Start a challenge"
+                    aria-label="View Projects"
                 >
                 View Projects
                     <span class="bg-[#5AE986] rounded-lg p-1">
@@ -66,7 +66,7 @@
 
                 <button
                     class="cursor-pointer bg-white/3 backdrop-blur-xs px-4 py-2 rounded text-white text-md font-semibold border border-white rounded-xl hover:scale-105 transition ease-in-out duration-300 lg:mt-0"
-                    aria-label="Start free trial"
+                    aria-label="Contact Me"
                 >
                     Contact Me
                 </button>
