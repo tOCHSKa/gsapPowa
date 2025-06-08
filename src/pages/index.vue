@@ -12,15 +12,9 @@
         particlesTop="10%"
         particlesLeft="0%"
       />
+      <CookieBanner />
     </div>
-
-    <!-- <div class="test">
-      <div class="h-full w-full flex items-center justify-center text-white text-3xl">
-        <FullGrid />
-      </div>
-    </div>
-  
-    <div class="h-[200vh] bg-black"></div> -->
+    <SeeYaLater />
   </template>
   
   <script setup>
@@ -31,6 +25,8 @@
   import GlowParticlesEffect from '../components/GlowParticlesEffect.vue'
   import MyParticleComponent from '../components/ReusableGlow.vue'
   import FullGrid from '../components/FullGrid.vue'
+  import CookieBanner from '../components/CookieBanner.vue'
+  import SeeYaLater from '../components/SeeYaLater.vue'
   
   import { onMounted } from 'vue'
   import gsap from 'gsap'

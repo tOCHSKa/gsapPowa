@@ -40,7 +40,8 @@
                 </div>
                 <div class="flex items-center gap-1">
                 <button
-                    class=" buttons1 cursor-pointer border-2 flex items-center justify-center gap-1 px-2 py-2 border border-white bg-white text-black rounded-xl font-semibold"
+                    class=" buttons1 cursor-pointer border-2 flex items-center justify-center gap-1 px-2 py-2 border border-white bg-white
+                     text-black rounded-xl font-semibold hover:bg-white/20 transition ease-in-out hover:text-white"
                     aria-label="View Projects"
                 >
                     View Projects
@@ -53,7 +54,8 @@
                 </button>
 
                 <button
-                    class="buttons2 cursor-pointer px-4 py-2 rounded text-white text-md font-semibold border border-white border-2 rounded-xl"
+                    class="buttons2 cursor-pointer px-4 py-2 rounded text-white text-md
+                    font-semibold border border-white border-2 rounded-xl hover:bg-white transition ease-in-out duration-300 hover:text-black"
                     aria-label="Contact Me"
                 >
                     Contact Me
@@ -95,8 +97,9 @@
       </li>
       <li class="flex items-center flex-start gap-5 mt-2 ">
         <button
-          class="cursor-pointer border-2 flex items-center justify-center gap-1 px-2 py-2 border-white bg-white text-black rounded-xl font-semibold"
-          aria-label="Start a challenge"
+          class="cursor-pointer border-2 flex items-center justify-center gap-1
+          px-2 py-2 border-white bg-white text-black rounded-xl font-semibold"
+          aria-label="View Projects"
           @click="closeMenu"
         >
           View Projects
@@ -115,7 +118,7 @@
         </button>
         <button
           class=" cursor-pointer px-4 py-2 rounded text-white text-md font-semibold border border-white rounded-xl"
-          aria-label="Start free trial"
+          aria-label="Contact Me"
           @click="closeMenu"
         >
           Contact Me
