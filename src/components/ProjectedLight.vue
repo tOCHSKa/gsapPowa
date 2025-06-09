@@ -83,9 +83,5 @@ onMounted(() => {
   overflow: hidden;
 }
 
-@media (max-width: 768px) {
-  .beam {
-    display: none;
-  }
-}
+
 </style>

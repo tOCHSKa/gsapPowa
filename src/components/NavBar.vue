@@ -104,7 +104,7 @@
     <ul
       v-if="isOpen"
       id="mobile-menu"
-      class="h-full relative z-[10001] DMsans xl:hidden mt-[72px] bg-[#141915]/50 backdrop-blur-lg rounded-b-xl p-5 text-white text-lg font-medium flex flex-col gap-4 fixed top-0 left-0 right-0 z-30"
+      class="h-full relative z-[10001] DMsans xl:hidden mt-[72px] bg-[#141915]/50 backdrop-blur-lg rounded-b-xl p-5 text-white text-md font-medium flex flex-col gap-4 fixed top-0 left-0 right-0 z-30"
       role="menu"
       aria-label="Mobile Primary Links"
     >
