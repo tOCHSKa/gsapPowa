@@ -36,7 +36,7 @@
                       <Icon icon="oui:arrow-up" width="1.2em" height="1.2em"  style="color: #fff" />
                     </div>
                     </button>
-                    <ul v-if="isOpen" class="absolute top-10 left-0 w-full bg-white/5 backdrop-blur-md rounded-2xl text-white py-2 px-3 mt-2 transition ease-in-out duration-300">
+                    <ul @mouseleave="isOpen = false" v-if="isOpen" class="absolute top-10 left-0 w-full bg-white/5 backdrop-blur-md rounded-2xl text-white py-2 px-3 mt-2 transition ease-in-out duration-300">
                         <li class="cursor-pointer flex items-center gap-2">
                           <Icon icon="emojione:flag-for-france" width="1.2em" height="1.2em" />
                           <span class="DMsans hover:scale-105 transition ease-in-out duration-300">French</span>
