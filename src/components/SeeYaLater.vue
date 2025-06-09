@@ -40,7 +40,7 @@
     position: relative;
     background: #000;
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     display: grid;
     place-items: center;
     z-index: 995;
