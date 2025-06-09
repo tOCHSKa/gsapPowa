@@ -54,6 +54,10 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --glow-color: rbg(217,176,255);
+    --glow-spread-color: rgba(191,123,255, 0.781);
+    --enhanced-glow-color: rgb(231,206,255);
+    --btn-color: rgb(100,61,136);
   }
 }
 @layer base {

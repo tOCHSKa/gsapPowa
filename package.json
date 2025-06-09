@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^3.0.8",
+    "@iconify/vue": "^5.0.0",
     "@tailwindcss/cli": "^4.1.8",
     "gsap": "^3.13.0",
     "split-type": "^0.3.4",

@@ -13,6 +13,8 @@
         particlesLeft="0%"
       />
       <CookieBanner />
+      <ScrollToExplor />
+      <FollowLink />
     </div>
     <SeeYaLater />
   </template>
@@ -27,7 +29,8 @@
   import FullGrid from '../components/FullGrid.vue'
   import CookieBanner from '../components/CookieBanner.vue'
   import SeeYaLater from '../components/SeeYaLater.vue'
-  
+  import ScrollToExplor from '../components/ScrollToExplor.vue'
+  import FollowLink from '../components/FollowLink.vue'  
   import { onMounted } from 'vue'
   import gsap from 'gsap'
   import ScrollTrigger from 'gsap/ScrollTrigger'
@@ -36,7 +39,7 @@
   
   onMounted(() => {
     // Positionner la div .test en dehors de l'écran au début
-    gsap.set(".test", {
+    gsap.set("#test", {
       position: "fixed",
       top: 0,
       left: 0,
@@ -48,11 +51,11 @@
     });
   
     // Animation au scroll
-    gsap.to(".test", {
+    gsap.to("#test", {
       y: "0%",
       ease: "power2.out",
       scrollTrigger: {
-        trigger: ".test",
+        trigger: "#test",
         start: "top bottom",
         end: "top top",
         scrub: true,

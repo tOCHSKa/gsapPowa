@@ -8,7 +8,7 @@
         Front-End Developer,
         <!-- Chart Icon -->
         <span class="flex items-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#5AE986]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 17l6-6 4 4 8-8" />
         </svg>
         UI/UX  Enthusiast
@@ -22,28 +22,28 @@
       <ul class="cursor-default m-6 text-left lg:text-center flex justify-center gap-4   flex-col  lg:flex-row mb-8" role="list" aria-label="Key benefits">
         <li class="flex items-center gap-2">
           <!-- Lightning Icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#5AE986]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
           </svg>
           <p class="text-md text-white">Performance-First Code</p>
         </li>
         <li class="flex items-center gap-2">
           <!-- Monitor Icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#5AE986]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17h4.5m-9.5-3.75h14.5v-7a1.75 1.75 0 00-1.75-1.75H6.5A1.75 1.75 0 004.75 6.25v7z" />
           </svg>
           <p class="text-md text-white">Clean UI/UX</p>
         </li>
         <li class="flex items-center gap-2">
           <!-- Infinity Icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#5AE986]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12c1.5-2 3-2 4.5 0s3 2 4.5 0M3 12c1.5-2 3-2 4.5 0s3 2 4.5 0" />
           </svg>
           <p class="text-md text-white">Reusable Components</p>
         </li>
         <li class="flex items-center gap-2">
           <!-- Flask Icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#5AE986] " fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 2v2m6-2v2m-9 4h12l-1.5 12.5a2 2 0 01-2 1.5h-5a2 2 0 01-2-1.5L6 8z" />
           </svg>
           <p class="text-md text-white ">SEO & Web Vitals 100%</p>

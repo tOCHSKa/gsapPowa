@@ -1,7 +1,8 @@
 <template>
-    <div class="mt-[100vh]">
-      <div class="textadqzdqz c1">
-        <h1>More Effects <span>Coming Soon ;)</span></h1>
+    <div class="mt-[100vh] relative z-[995]">
+      <div class="textadqzdqz c1 gradient-text">
+        <h1>More Effects <span class="cursor-default
+         text-white leading-tight tracking-[-.025em] glow-gradient-text">Coming Soon ;)</span></h1>
       </div>
     </div>
   </template>
@@ -42,6 +43,7 @@
     height: 100dvh;
     display: grid;
     place-items: center;
+    z-index: 995;
   }
   
   .c1 {
@@ -59,5 +61,16 @@
   .c1 h1 span {
     color: #5AE986;
   }
+
+  .glow-gradient-text {
+  background: linear-gradient(90deg, #000 0%, #5AE986 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 0 1px #ffffff,
+    0 0 1px #5AE986,
+    0 0 10px #2fdd92;
+}
   </style>
   

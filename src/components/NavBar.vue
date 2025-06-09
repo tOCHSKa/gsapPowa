@@ -13,7 +13,7 @@
                 <ul
                 class="ullist flex ml-3 flex items-center gap-1 text-white text-md font-medium bg-white/3 backdrop-blur-md rounded-xl px-1 py-1 hidden xl:flex"
                 >
-                    <li class="flex items-center cursor-pointer"><a href="#home" aria-label="Home" class="bg-white/10 backdrop-blur-md  hover:bg-white/20 transition ease-in-out duration-300 rounded-lg px-3 py-2">Home</a></li>
+                    <li class="flex items-center cursor-pointer"><a href="#test" aria-label="Home" class="bg-white/10 backdrop-blur-md  hover:bg-white/20 transition ease-in-out duration-300 rounded-lg px-3 py-2">Home</a></li>
                     <li class="flex items-center cursor-pointer"><a href="#how" aria-label="About Me" class="hover:bg-white/20 px-3 py-2 rounded-lg transition ease-in-out duration-300">About Me</a></li>
                     <li class="flex items-center cursor-pointer"><a href="#programs" aria-label="Projects" class="hover:bg-white/20 px-3 py-2 rounded-lg transition ease-in-out duration-300">Projects</a></li>
                     <li class="flex items-center cursor-pointer"><a href="#support" aria-label="Resume" class="hover:bg-white/20 px-3 py-2 rounded-lg transition ease-in-out duration-300">Resume</a></li>
@@ -22,26 +22,47 @@
                 </ul>
             </div>
             <div class="flex items-center gap-4 hidden xl:flex">
-                <div class="">
-                    <button
+                <div class="relative">
+                    <button @click="toggleLanguage" id="lang"
                     aria-label="Select language"
-                    class="cursor-pointer flex items-center gap-1 text-white text-sm p-3 rounded-md bg-white/10 backdrop-blur-md hover:bg-white/20 transition rounded-xl"
+                    class="cursor-pointer flex items-center gap-2 text-white text-sm p-3 rounded-md bg-white/10 backdrop-blur-md hover:bg-white/20 rounded-xl"
                     >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M12 2a10 10 0 100 20 10 10 0 000-20z" />
-                    </svg>
-                    <span class="DMsans">English</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M19 9l-7 7-7-7" />
-                    </svg>
+                    <Icon icon="fluent-mdl2:world" width="1.2em" height="1.2em"  style="color: #fff" />
+                    <span class="DMsans hover:scale-105 transition ease-in-out duration-300">English</span>
+                    <div v-if="isOpen" class="transition ease-in-out duration-300">
+                      <Icon icon="oui:arrow-down" width="1.2em" height="1.2em"  style="color: #fff" />
+                    </div>
+                    <div v-else class="transition ease-in-out duration-300">
+                      <Icon icon="oui:arrow-up" width="1.2em" height="1.2em"  style="color: #fff" />
+                    </div>
                     </button>
+                    <ul v-if="isOpen" class="absolute top-10 left-0 w-full bg-white/5 backdrop-blur-md rounded-2xl text-white py-2 px-3 mt-2 transition ease-in-out duration-300">
+                        <li class="cursor-pointer flex items-center gap-2">
+                          <Icon icon="emojione:flag-for-france" width="1.2em" height="1.2em" />
+                          <span class="DMsans hover:scale-105 transition ease-in-out duration-300">French</span>
+                        </li>
+                        <li class="cursor-pointer flex items-center gap-2">
+                          <Icon icon="emojione:flag-for-united-states" width="1.2em" height="1.2em" />
+                          <span class="DMsans hover:scale-105 transition ease-in-out duration-300">English</span>
+                        </li>
+                        <li class="cursor-pointer flex items-center gap-2">
+                          <Icon icon="emojione:flag-for-spain" width="1.2em" height="1.2em" />
+                          <span class="DMsans hover:scale-105 transition ease-in-out duration-300">Spanish</span>
+                        </li>
+                        <li class="cursor-pointer flex items-center gap-2">
+                          <Icon icon="emojione:flag-for-germany" width="1.2em" height="1.2em" />
+                          <span class="DMsans hover:scale-105 transition ease-in-out duration-300">German</span>
+                        </li>
+                        <li class="cursor-pointer flex items-center gap-2">
+                          <Icon icon="emojione:flag-for-italy" width="1.2em" height="1.2em" />
+                          <span class="DMsans hover:scale-105 transition ease-in-out duration-300">Italian</span>
+                        </li>
+                    </ul>
                 </div>
                 <div class="flex items-center gap-1">
                 <button
                     class=" buttons1 cursor-pointer border-2 flex items-center justify-center gap-1 px-2 py-2 border border-white bg-white
-                     text-black rounded-xl font-semibold hover:bg-white/20 transition ease-in-out hover:text-white"
+                     text-black rounded-xl font-semibold hover:bg-white/20 hover:text-white"
                     aria-label="View Projects"
                 >
                     View Projects
@@ -55,7 +76,7 @@
 
                 <button
                     class="buttons2 cursor-pointer px-4 py-2 rounded text-white text-md
-                    font-semibold border border-white border-2 rounded-xl hover:bg-white transition ease-in-out duration-300 hover:text-black"
+                    font-semibold border border-white border-2 rounded-xl hover:bg-white hover:text-black"
                     aria-label="Contact Me"
                 >
                     Contact Me
@@ -133,11 +154,22 @@
     import { onMounted } from 'vue';
     import { gsap } from 'gsap';
     import AnimatedWords from './AnimatedWords.vue';
+    import { Icon } from '@iconify/vue';
     const isOpen = ref(false)
+
+    const isScrolled = ref(false)
     const toggleMenu = () => {
       isOpen.value = !isOpen.value
     }
     onMounted(() => {
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+          isScrolled.value = true
+          isOpen.value = false
+        } else {
+          isScrolled.value = false
+        }
+      })
   gsap.fromTo(
     ".ullist",
     {
@@ -176,8 +208,9 @@
   {
     opacity: 1,
     scale: "1.0",
-    duration: 3,
-    ease: "back.out(1.4)",
+    duration: 1.2,
+    delay: 1.3,
+    ease: "power3.out",
   }
 );
 gsap.fromTo(
@@ -190,12 +223,29 @@ gsap.fromTo(
     opacity: 1,
     scale: "1.0",
     duration: 1.2,
-    delay: 0.8,
+    delay: 1.4,
+    ease: "power3.out",
+  }
+);
+gsap.fromTo(
+  "#lang",
+  {
+    opacity: 0,
+    scale: "0",
+  },
+  {
+    opacity: 1,
+    scale: "1.0",
+    duration: 1.2,
+    delay: 1.2,
     ease: "power3.out",
   }
 );
 });
 
+const toggleLanguage = () => {
+  isOpen.value = !isOpen.value
+}
   </script>
   
   <style scoped>
